@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.3/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.3/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+          const markmap = getMarkmap();
+          window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+        })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Patrones de diseño","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"Qué son?","children":[{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"Se trata de plantillas que identifican problemas en el sistema","children":[]},{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"proporcionan soluciones apropiadas a problemas generales","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[4,5]},"content":"Componentes","children":[{"type":"heading","depth":2,"payload":{"lines":[5,6]},"content":"El nombre del patrón.","children":[]},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"El problema que describe cuándo aplicarlo.","children":[]},{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"La solución que describe los elementos que constituyen el diseño.","children":[]},{"type":"heading","depth":2,"payload":{"lines":[8,9]},"content":"Las consecuencias o resultados que representan las ventajas e inconvenientes","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[9,10]},"content":"Beneficios","children":[{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"Reutliza los codigos","children":[]},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"Mejora la calidad del software","children":[]},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"Facilita el mantenimiento del codigo","children":[]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"Facilita la comunicación con el equipo","children":[]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"Acelera el desarrolo del sofware","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[15,16]},"content":"Precuaciones","children":[{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"No usar","children":[{"type":"heading","depth":3,"payload":{"lines":[17,18]},"content":"si el patron te obliga a modifrcar tu codigo","children":[]}]}]},{"type":"heading","depth":1,"payload":{"lines":[18,19]},"content":"Tipos de patrones de diseño","children":[{"type":"heading","depth":2,"payload":{"lines":[19,20]},"content":"Creacionales: Estos patrones son diseñados para la instanciación de clases.","children":[{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"Abstract Factory","children":[]},{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"Builder Patterns","children":[]},{"type":"heading","depth":3,"payload":{"lines":[22,23]},"content":"Factory Method","children":[]},{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"Singleton","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[24,25]},"content":"Estructurales:  incrementar la funcionalidad de la(s) clase(s) involucrada(s), sin cambiar mucho de su composición.","children":[{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"Adapter","children":[]},{"type":"heading","depth":3,"payload":{"lines":[26,27]},"content":"Composite","children":[]},{"type":"heading","depth":3,"payload":{"lines":[27,28]},"content":"Decorator","children":[]},{"type":"heading","depth":3,"payload":{"lines":[28,29]},"content":"Facade","children":[]},{"type":"heading","depth":3,"payload":{"lines":[29,30]},"content":"Proxy","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[30,31]},"content":"De comportamiento: Estos patrones son diseñados dependiendo de cómo una clase se comunica con otras.","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[31,32]},"content":"Antipatrones","children":[{"type":"heading","depth":2,"payload":{"lines":[32,33]},"content":"¿Qué son?","children":[{"type":"heading","depth":3,"payload":{"lines":[33,34]},"content":"Es un patrón de diseño que nos va a conducir a una mala solución a un problema","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[34,35]},"content":"Tipos","children":[{"type":"heading","depth":3,"payload":{"lines":[35,36]},"content":"Antipatrones de diseño de software","children":[]},{"type":"heading","depth":3,"payload":{"lines":[36,37]},"content":"Antipatrones de diseño Orientado a Objetos","children":[]},{"type":"heading","depth":3,"payload":{"lines":[37,38]},"content":"Antipatrones de programación","children":[]},{"type":"heading","depth":3,"payload":{"lines":[38,39]},"content":"Antipatrones metodológicos","children":[]}]}]}]},{})</script>
+</body>
+</html>
